@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background-color: #f0f0f0; */
+      }
+
+      .Card3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+      }
+
+      .Card3-c {
+        position: relative;
+        width: calc(92% / 3);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-top: 1%;
+      }
+
+      .Card3-c img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .Card3-c:hover img {
+        transform: scale(1.05);
+      }
+
+      .Card3-c .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        box-sizing: border-box;
+        color: #fff;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .Card3-c:hover .overlay {
+        transform: translateY(0);
+      }
+
+      @media screen and (max-width: 890px) {
+        .Card3-c {
+          width: calc(93% / 2);
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .Card3-c {
+          width: calc(94% / 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 2%">
+      Active Adventures: Explore the World of Fitness
+    </h1>
+    <div class="Main">
+      <div class="Card3">
+        <div class="Card3-c">
+          <img src="./Swim.jpg" alt="Swimming" />
+          <div class="overlay">
+            <h2>Swimming</h2>
+            <p>
+              Swimming is a great full-body workout that improves cardiovascular
+              health and muscle strength.
+            </p>
+          </div>
+        </div>
+        <div class="Card3-c">
+          <img src="./Gym.jpg" alt="Gym" />
+          <div class="overlay">
+            <h2>Gym</h2>
+            <p>
+              Working out at the gym helps in building strength, toning muscles,
+              and improving overall fitness.
+            </p>
+          </div>
+        </div>
+        <div class="Card3-c">
+          <img src="./Cycling.jpg" alt="Cycling" />
+          <div class="overlay">
+            <h2>Cycling</h2>
+            <p>
+              Cycling is an excellent low-impact exercise that improves
+              cardiovascular health and promotes weight loss.
+            </p>
+          </div>
+        </div>
+        <div class="Card3-c">
+          <img src="./Yoga.jpg" alt="Yoga" />
+          <div class="overlay">
+            <h2>Yoga</h2>
+            <p>
+              Yoga combines physical postures, breathing exercises, and
+              meditation to enhance overall well-being and flexibility.
+            </p>
+          </div>
+        </div>
+        <div class="Card3-c">
+          <img src="./Zumba.jpg" alt="Zumba" />
+          <div class="overlay">
+            <h2>Zumba</h2>
+            <p>
+              Zumba is a high-energy fitness class that combines Latin music and
+              dance moves, making exercise fun and enjoyable.
+            </p>
+          </div>
+        </div>
+        <div class="Card3-c">
+          <img src="./karate.jpg" alt="Karate" />
+          <div class="overlay">
+            <h2>Karate</h2>
+            <p>
+              Karate is a traditional Japanese martial art that focuses on
+              self-defense techniques, discipline, and physical fitness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
